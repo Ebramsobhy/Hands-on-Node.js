@@ -1,0 +1,12 @@
+{
+  "name": "nested_callbacks",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "",
+  "main": "example_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ebram Sobhy",
+  "license": "ISC"
+}

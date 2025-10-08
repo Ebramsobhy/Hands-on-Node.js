@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ebram",
+    "salary": 5000,
+    "bonus": 500,
+    "totalSalary": 5500
+  },
+  {
+    "name": "Mina",
+    "salary": 7000,
+    "bonus": 700,
+    "totalSalary": 7700
+  },
+  {
+    "name": "Sara",
+    "salary": 6000,
+    "bonus": 600,
+    "totalSalary": 6600
+  }
+]
