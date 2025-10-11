@@ -7,20 +7,13 @@ function readEmployeesFile(){
 }
 
 function addSalaryBonus(employeeData) {
-    return new Promise((resolve, reject) => {
-      try {
-        const employees = JSON.parse(employeeData);
-        const employeesWithBonus = employees.map(emp => ({
-          name: emp.name,
-          salary: emp.salary,
-          bonus: emp.salary * 0.1,
-          totalSalary: emp.salary + emp.salary * 0.1
-        }));
-        resolve(employeesWithBonus);
-      } catch (err) {
-        reject(err);
-      }
-   });
+  const employees = JSON.parse(employeeData);
+  return employees.map(emp => ({
+    name: emp.name,
+    salary: emp.salary,
+    bonus: emp.salary * 0.1,
+    totalSalary: emp.salary + emp.salary * 0.1
+  }));
 }
   
 function writeUpdatedEmployeesFile(updatedEmployees){
