@@ -1,0 +1,10 @@
+[
+  { "id": 1, "postId": 101, "text": "Great post, Ebram!" },
+  { "id": 2, "postId": 101, "text": "Thanks for sharing, Ebram!" },
+  { "id": 3, "postId": 102, "text": "Very helpful, Ebram!" },
+  { "id": 4, "postId": 201, "text": "Nice work, John!" },
+  { "id": 5, "postId": 301, "text": "Love this topic, Sara!" },
+  { "id": 6, "postId": 301, "text": "Good explanation, Sara!" },
+  { "id": 7, "postId": 302, "text": "Awesome details, Sara!" },
+  { "id": 8, "postId": 303, "text": "Really interesting post, Sara!" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": 101, "userId": 1, "title": "Ebram’s Post 1" },
+  { "id": 102, "userId": 1, "title": "Ebram’s Post 2" },
+  { "id": 201, "userId": 2, "title": "John’s Post 1" },
+  { "id": 301, "userId": 3, "title": "Sara’s Post 1" },
+  { "id": 302, "userId": 3, "title": "Sara’s Post 2" },
+  { "id": 303, "userId": 3, "title": "Sara’s Post 3" }
+]
