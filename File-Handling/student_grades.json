@@ -1,0 +1,5 @@
+[
+    { "name": "Ebram", "grades": { "english": 70, "math": 80, "arabic": 90, "science": 60 } },
+    { "name": "Omar", "grades": { "english": 40, "math": 35, "arabic": 50, "science": 45 } },
+    { "name": "John", "grades": { "english": 90, "math": 95, "arabic": 85, "science": 100 } }
+]
