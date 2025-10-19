@@ -27,7 +27,11 @@ async function processStudentGrades() {
 
     console.log('Student results saved successfully to student_results.json');
   } catch (err) {
-    console.error('Error:', err.message);
+    if (err.message.includes('no such file or directory')){
+        console.error('File does not exist');
+    } else {
+        console.error('Error:', err.message);
+    }
   }
 }
 
