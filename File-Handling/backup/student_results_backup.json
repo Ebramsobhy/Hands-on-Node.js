@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Ebram",
+    "grades": {
+      "english": 70,
+      "math": 80,
+      "arabic": 90,
+      "science": 60
+    },
+    "average": "75.00",
+    "status": "Pass"
+  },
+  {
+    "name": "Omar",
+    "grades": {
+      "english": 40,
+      "math": 35,
+      "arabic": 50,
+      "science": 45
+    },
+    "average": "42.50",
+    "status": "Fail"
+  },
+  {
+    "name": "John",
+    "grades": {
+      "english": 90,
+      "math": 95,
+      "arabic": 85,
+      "science": 100
+    },
+    "average": "92.50",
+    "status": "Pass"
+  }
+]
