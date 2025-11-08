@@ -23,21 +23,20 @@ let arr = [
     "nermeen.s25@edu.com"
   ]
 
-
 const emailRegex = /^(?=.{10,50}$)[a-zA-Z][a-zA-Z0-9]{4,}(?:\.[a-zA-Z0-9]+)?@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const rules = [
-    { test: e => e.length < 10 || e.length > 50, reason: "Length must be between 10 and 50 characters." },
-    { test: e => !/^[a-zA-Z]/.test(e), reason: "Username must start with a letter." },
-    { test: e => !/@/.test(e), reason: "Missing '@' symbol." },
-    { test: e => e.match(/@/g).length > 1, reason: "Multiple '@' symbols are not allowed." },
-    { test: e => !/[a-zA-Z0-9]{4,}/.test(e.split("@")[0]), reason: "Username must have at least 5 characters." },
-    { test: e => !/\.[a-zA-Z]{2,}$/.test(e), reason: "Invalid or too short top-level domain." },
-    { test: e => /[^a-zA-Z0-9.@-]/.test(e), reason: "Contains invalid characters." }
+    { regex: e => e.length < 10 || e.length > 50, reason: "Length must be between 10 and 50 characters." },
+    { regex: e => !/^[a-zA-Z]/.test(e), reason: "Username must start with a letter." },
+    { regex: e => !/@/.test(e), reason: "Missing '@' symbol." },
+    { regex: e => e.match(/@/g).length > 1, reason: "Multiple '@' symbols are not allowed." },
+    { regex: e => !/[a-zA-Z0-9]{4,}/.test(e.split("@")[0]), reason: "Username must have at least 5 characters." },
+    { regex: e => !/\.[a-zA-Z]{2,}$/.test(e), reason: "Invalid or too short top-level domain." },
+    { regex: e => /[^a-zA-Z0-9.@-]/.test(e), reason: "Contains invalid characters." }
   ];
   
   for (let email of arr) {
-    const failedRule = rules.find(r => r.test(email));
+    const failedRule = rules.find(r => r.regex(email));
     const result = emailRegex.test(email);
     const reason = failedRule ? failedRule.reason : "";
     console.log(`${email} → ${result ? "Valid" : "Invalid"} ${reason ? "- " + reason : ""}`);
