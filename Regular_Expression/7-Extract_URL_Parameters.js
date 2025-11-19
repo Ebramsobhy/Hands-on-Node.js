@@ -1,5 +1,3 @@
-  // Extracts query parameters from a URL
-
 function parseQueryString(url){
     let queryParams = {}; 
     let queryRegex = /.+\?(.+)/; 
